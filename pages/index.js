@@ -118,5 +118,9 @@ function Home() {
 
   `
 }
-
-export default Home;
+module.exports = (req, res) => {
+    // Define o cabeçalho da resposta HTTP
+    res.setHeader('Content-Type', 'text/html');
+    // Renderiza o HTML e envia como resposta
+    res.status(200).send(Home());
+};
