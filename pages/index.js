@@ -1,5 +1,5 @@
 function Home() {
-  return (
+  return `
     <!DOCTYPE html>
     <html lang="pt-BR">
     <head>
@@ -116,7 +116,7 @@ function Home() {
     </body>
     </html>
 
-  );
+  `
 }
 
 export default Home;
